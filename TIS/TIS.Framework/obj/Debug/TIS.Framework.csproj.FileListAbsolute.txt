@@ -1,0 +1,15 @@
+E:\_TFS_ONLINE\Dries\VUYLSTEKE\TIS\TIS.Framework\bin\Debug\TIS.Framework.dll
+E:\_TFS_ONLINE\Dries\VUYLSTEKE\TIS\TIS.Framework\bin\Debug\TIS.Framework.pdb
+E:\_TFS_ONLINE\Dries\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.dll
+E:\_TFS_ONLINE\Dries\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.pdb
+E:\_TFS_ONLINE\Dries\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.csprojResolveAssemblyReference.cache
+C:\Users\Giani\Downloads\VUYLSTEKE\TIS\TIS.Framework\bin\Debug\TIS.Framework.dll
+C:\Users\Giani\Downloads\VUYLSTEKE\TIS\TIS.Framework\bin\Debug\TIS.Framework.pdb
+C:\Users\Giani\Downloads\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.csprojResolveAssemblyReference.cache
+C:\Users\Giani\Downloads\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.dll
+C:\Users\Giani\Downloads\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.pdb
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Framework\bin\Debug\TIS.Framework.dll
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Framework\bin\Debug\TIS.Framework.pdb
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.csprojResolveAssemblyReference.cache
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.dll
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Framework\obj\Debug\TIS.Framework.pdb

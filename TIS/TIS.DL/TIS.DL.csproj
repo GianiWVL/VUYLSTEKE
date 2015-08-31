@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7592A856-E0D9-4997-A601-DF7058434DF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TIS.DL</RootNamespace>
+    <AssemblyName>TIS.DL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TIS.Outlook2007_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PROF_IT.Application">
+      <HintPath>..\REFERENCES\PROF_IT.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.Common">
+      <HintPath>..\REFERENCES\PROF_IT.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.DLM">
+      <HintPath>..\REFERENCES\PROF_IT.DLM.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.Exceptionhandling">
+      <HintPath>..\..\..\..\..\Local_TFS_Projects\Dries\ITT\ITT\Software\References\PROF_IT.Exceptionhandling.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="External\TAS\TurnOver\TurnOverConvertor.cs" />
+    <Compile Include="External\TAS\TurnOver\TurnOverObject.cs" />
+    <Compile Include="External\TAS\TurnOver\TurnOverObjectCollection.cs" />
+    <Compile Include="Internal\Customer\CustomerConvertor.cs" />
+    <Compile Include="Internal\Customer\CustomerObject.cs" />
+    <Compile Include="Internal\Customer\CustomerObjectCollection.cs" />
+    <Compile Include="Internal\Employee\EmployeeConvertor.cs" />
+    <Compile Include="Internal\Employee\EmployeeObject.cs" />
+    <Compile Include="Internal\Employee\EmployeeObjectCollection.cs" />
+    <Compile Include="Internal\FuelCorrection\FuelCorrectionConvertor.cs" />
+    <Compile Include="Internal\FuelCorrection\FuelCorrectionObject.cs" />
+    <Compile Include="Internal\FuelCorrection\FuelCorrectionObjectCollection.cs" />
+    <Compile Include="Internal\FuelDelivery\FuelDeliveryConvertor.cs" />
+    <Compile Include="Internal\FuelDelivery\FuelDeliveryObject.cs" />
+    <Compile Include="Internal\FuelDelivery\FuelDeliveryObjectCollection.cs" />
+    <Compile Include="Internal\Fuel\FuelConvertor.cs" />
+    <Compile Include="Internal\Fuel\FuelObject.cs" />
+    <Compile Include="Internal\Fuel\FuelObjectCollection.cs" />
+    <Compile Include="Internal\Language\LanguageConvertor.cs" />
+    <Compile Include="Internal\Language\LanguageObject.cs" />
+    <Compile Include="Internal\Language\LanguageObjectCollection.cs" />
+    <Compile Include="Internal\MaintenanceVehicle\MaintenanceVehicleConvertor.cs" />
+    <Compile Include="Internal\MaintenanceVehicle\MaintenanceVehicleObject.cs" />
+    <Compile Include="Internal\MaintenanceVehicle\MaintenanceVehicleObjectCollection.cs" />
+    <Compile Include="Internal\Maintenance\MaintenanceConvertor.cs" />
+    <Compile Include="Internal\Maintenance\MaintenanceObject.cs" />
+    <Compile Include="Internal\Maintenance\MaintenanceObjectCollection.cs" />
+    <Compile Include="Internal\MaterialCategory\MaterialCategoryConvertor.cs" />
+    <Compile Include="Internal\MaterialCategory\MaterialCategoryObject.cs" />
+    <Compile Include="Internal\MaterialCategory\MaterialCategoryObjectCollection.cs" />
+    <Compile Include="Internal\MaterialRevision\MaterialRevisionConvertor.cs" />
+    <Compile Include="Internal\MaterialRevision\MaterialRevisionObject.cs" />
+    <Compile Include="Internal\MaterialRevision\MaterialRevisionObjectCollection.cs" />
+    <Compile Include="Internal\MaterialSubType\MaterialSubTypeConvertor.cs" />
+    <Compile Include="Internal\MaterialSubType\MaterialSubTypeObject.cs" />
+    <Compile Include="Internal\MaterialSubType\MaterialSubTypeObjectCollection.cs" />
+    <Compile Include="Internal\MaterialType\MaterialTypeConvertor.cs" />
+    <Compile Include="Internal\MaterialType\MaterialTypeObject.cs" />
+    <Compile Include="Internal\MaterialType\MaterialTypeObjectCollection.cs" />
+    <Compile Include="Internal\Material\MaterialConvertor.cs" />
+    <Compile Include="Internal\Material\MaterialObject.cs" />
+    <Compile Include="Internal\Material\MaterialObjectCollection.cs" />
+    <Compile Include="Internal\Memo\MemoConvertor.cs" />
+    <Compile Include="Internal\Memo\MemoObject.cs" />
+    <Compile Include="Internal\Memo\MemoObjectCollection.cs" />
+    <Compile Include="Internal\ParameterSystem\ParameterSystemConvertor.cs" />
+    <Compile Include="Internal\ParameterSystem\ParameterSystemObject.cs" />
+    <Compile Include="Internal\ParameterSystem\ParameterSystemObjectCollection.cs" />
+    <Compile Include="Internal\PopupUser\PopupUserConverter.cs" />
+    <Compile Include="Internal\PopupUser\PopupUserObject.cs" />
+    <Compile Include="Internal\PopupUser\PopupUserObjectCollection.cs" />
+    <Compile Include="Internal\Popup\PopupConvertor.cs" />
+    <Compile Include="Internal\Popup\PopupObject.cs" />
+    <Compile Include="Internal\Popup\PopupObjectCollection.cs" />
+    <Compile Include="Internal\Revision\RevisionConvertor.cs" />
+    <Compile Include="Internal\Revision\RevisionObject.cs" />
+    <Compile Include="Internal\Revision\RevisionObjectCollection.cs" />
+    <Compile Include="Internal\Schedule\ScheduleConvertor.cs" />
+    <Compile Include="Internal\Schedule\ScheduleObject.cs" />
+    <Compile Include="Internal\Schedule\ScheduleObjectCollection.cs" />
+    <Compile Include="Internal\Supplier\SupplierConvertor.cs" />
+    <Compile Include="Internal\Supplier\SupplierObject.cs" />
+    <Compile Include="Internal\Supplier\SupplierObjectCollection.cs" />
+    <Compile Include="Internal\TaskPeople\TaskPeopleConvertor.cs" />
+    <Compile Include="Internal\TaskPeople\TaskPeopleObject.cs" />
+    <Compile Include="Internal\TaskPeople\TaskPeopleObjectCollection.cs" />
+    <Compile Include="Internal\TaskSchedule\TaskScheduleConvertor.cs" />
+    <Compile Include="Internal\TaskSchedule\TaskScheduleObject.cs" />
+    <Compile Include="Internal\TaskSchedule\TaskScheduleObjectCollection.cs" />
+    <Compile Include="Internal\Task\TaskConvertor.cs" />
+    <Compile Include="Internal\Task\TaskObject.cs" />
+    <Compile Include="Internal\Task\TaskObjectCollection.cs" />
+    <Compile Include="Internal\Unknown\UnknownConvertor.cs" />
+    <Compile Include="Internal\Unknown\UnknownObject.cs" />
+    <Compile Include="Internal\Unknown\UnknownObjectCollection.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityApplication.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityConvertor.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityCosting.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityMain.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityMaterial.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityObject.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityObjectCollection.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityPlanning.cs" />
+    <Compile Include="Internal\UserSecurity\UserSecurityVehicle.cs" />
+    <Compile Include="Internal\User\UserConvertor.cs" />
+    <Compile Include="Internal\User\UserObject.cs" />
+    <Compile Include="Internal\User\UserObjectCollection.cs" />
+    <Compile Include="Internal\VehicleMileage\VehicleMileageConvertor.cs" />
+    <Compile Include="Internal\VehicleMileage\VehicleMileageObject.cs" />
+    <Compile Include="Internal\VehicleMileage\VehicleMileageObjectCollection.cs" />
+    <Compile Include="Internal\VehicleTransicsLink\VehicleTransicsLinkConvertor.cs" />
+    <Compile Include="Internal\VehicleTransicsLink\VehicleTransicsLinkObject.cs" />
+    <Compile Include="Internal\VehicleTransicsLink\VehicleTransicsLinkObjectCollection.cs" />
+    <Compile Include="Internal\VehicleTransics\VehicleTransicsObject.cs" />
+    <Compile Include="Internal\VehicleTransics\VehicleTransicsObjectCollection.cs" />
+    <Compile Include="Internal\VehicleType\VehicleTypeConvertor.cs" />
+    <Compile Include="Internal\VehicleType\VehicleTypeObject.cs" />
+    <Compile Include="Internal\VehicleType\VehicleTypeObjectCollection.cs" />
+    <Compile Include="Internal\Vehicle\VehicleConvertor.cs" />
+    <Compile Include="Internal\Vehicle\VehicleObject.cs" />
+    <Compile Include="Internal\Vehicle\VehicleObjectCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Context.cs" />
+    <Compile Include="Security\Functions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\TIS.DL.External.TAS.TurnOver.TurnOverObjectCollection.datasource" />
+    <None Include="TIS.Outlook2007_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TIS.Framework\TIS.Framework.csproj">
+      <Project>{4ec49b46-2ee5-42e1-887b-76d3681e33d1}</Project>
+      <Name>TIS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

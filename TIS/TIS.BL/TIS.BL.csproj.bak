@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4705C1C-64B3-4D70-A6A5-84628086A6AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TIS.BL</RootNamespace>
+    <AssemblyName>TIS.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TIS.Outlook2007_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PROF_IT.Application">
+      <HintPath>..\REFERENCES\PROF_IT.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.Common">
+      <HintPath>..\REFERENCES\PROF_IT.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.DLM">
+      <HintPath>..\REFERENCES\PROF_IT.DLM.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.Exceptionhandling">
+      <HintPath>..\..\..\..\..\Local_TFS_Projects\Dries\ITT\ITT\Software\References\PROF_IT.Exceptionhandling.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="External\TAS\TurnOver\TurnOver.cs" />
+    <Compile Include="Internal\Fuel.cs" />
+    <Compile Include="Internal\FuelCorrection.cs" />
+    <Compile Include="Internal\FuelDelivery.cs" />
+    <Compile Include="Internal\Language.cs" />
+    <Compile Include="Internal\Maintenance.cs" />
+    <Compile Include="Internal\MaintenanceVehicle.cs" />
+    <Compile Include="Internal\Material.cs" />
+    <Compile Include="Internal\MaterialCategory.cs" />
+    <Compile Include="Internal\MaterialRevision.cs" />
+    <Compile Include="Internal\MaterialSubType.cs" />
+    <Compile Include="Internal\MaterialType.cs" />
+    <Compile Include="Internal\Memo.cs" />
+    <Compile Include="Internal\Popup.cs" />
+    <Compile Include="Internal\Revision.cs" />
+    <Compile Include="Internal\Task.cs" />
+    <Compile Include="Internal\Customer.cs" />
+    <Compile Include="Internal\Employee.cs" />
+    <Compile Include="Internal\ParameterSystem.cs" />
+    <Compile Include="Internal\Schedule.cs" />
+    <Compile Include="Internal\Supplier.cs" />
+    <Compile Include="Internal\TaskPeople.cs" />
+    <Compile Include="Internal\TaskSchedule.cs" />
+    <Compile Include="Internal\Unknown.cs" />
+    <Compile Include="Internal\User.cs" />
+    <Compile Include="Internal\Vehicle.cs" />
+    <Compile Include="Internal\VehicleMileage.cs" />
+    <Compile Include="Internal\VehicleTransicsLink.cs" />
+    <Compile Include="Internal\VehicleType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TIS.Outlook2007_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TIS.DATA\TIS.DATA.csproj">
+      <Project>{69074938-9e8f-478a-bcc7-0133980e6ddb}</Project>
+      <Name>TIS.DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TIS.DL\TIS.DL.csproj">
+      <Project>{7592a856-e0d9-4997-a601-df7058434df0}</Project>
+      <Name>TIS.DL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

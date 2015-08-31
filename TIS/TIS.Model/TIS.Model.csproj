@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5278012-7074-440E-B15D-1125A3CB58E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TIS.Model</RootNamespace>
+    <AssemblyName>TIS.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TIS.Outlook2007_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\BoardComputerBL.cs" />
+    <Compile Include="BL\CostBL.cs" />
+    <Compile Include="BL\EmployeeBL.cs" />
+    <Compile Include="BL\SupplierBL.cs" />
+    <Compile Include="BL\VacationBL.cs" />
+    <Compile Include="BL\VacationTypeBL.cs" />
+    <Compile Include="BL\VehicleBL.cs" />
+    <Compile Include="Internal\Absence.cs" />
+    <Compile Include="Internal\AssignedDriver.cs" />
+    <Compile Include="Internal\AssignedVehicle.cs" />
+    <Compile Include="Internal\BoardComputer.cs" />
+    <Compile Include="Internal\Cost.cs" />
+    <Compile Include="Internal\Cost.Designer.cs">
+      <DependentUpon>Cost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Customer.cs" />
+    <Compile Include="Internal\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Document\DocNode.cs" />
+    <Compile Include="Internal\Document\Document.cs" />
+    <Compile Include="Internal\Job.cs" />
+    <Compile Include="Internal\Planning.cs" />
+    <Compile Include="Internal\PlanningMemo.cs" />
+    <Compile Include="Internal\Tire.cs" />
+    <Compile Include="Internal\Vacation.cs" />
+    <Compile Include="Internal\Employee.cs" />
+    <Compile Include="Internal\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Fuel.cs" />
+    <Compile Include="Internal\Fuel.Designer.cs">
+      <DependentUpon>Fuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Maintenance.cs" />
+    <Compile Include="Internal\Maintenance.Designer.cs">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\MaintenanceVehicle.cs" />
+    <Compile Include="Internal\MaintenanceVehicle.Designer.cs">
+      <DependentUpon>MaintenanceVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Material.cs" />
+    <Compile Include="Internal\Material.Designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\MaterialCategory.cs" />
+    <Compile Include="Internal\MaterialCategory.Designer.cs">
+      <DependentUpon>MaterialCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\MaterialRevision.cs" />
+    <Compile Include="Internal\MaterialRevision.Designer.cs">
+      <DependentUpon>MaterialRevision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\MaterialSubType.cs" />
+    <Compile Include="Internal\MaterialSubType.Designer.cs">
+      <DependentUpon>MaterialSubType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\MaterialType.cs" />
+    <Compile Include="Internal\MaterialType.Designer.cs">
+      <DependentUpon>MaterialType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Memo.cs" />
+    <Compile Include="Internal\Memo.Designer.cs">
+      <DependentUpon>Memo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\ParameterSystem.cs" />
+    <Compile Include="Internal\ParameterSystem.Designer.cs">
+      <DependentUpon>ParameterSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Popup.cs" />
+    <Compile Include="Internal\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\PopupUser.cs" />
+    <Compile Include="Internal\PopupUser.Designer.cs">
+      <DependentUpon>PopupUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Revision.cs" />
+    <Compile Include="Internal\Revision.Designer.cs">
+      <DependentUpon>Revision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Schedule.cs" />
+    <Compile Include="Internal\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\sp_helpdiagramdefinitionResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\sp_helpdiagramsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\StoredProcHelper.cs" />
+    <Compile Include="Internal\Supplier.cs" />
+    <Compile Include="Internal\Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\sysdiagrams.cs" />
+    <Compile Include="Internal\sysdiagrams.Designer.cs">
+      <DependentUpon>sysdiagrams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Task.cs" />
+    <Compile Include="Internal\Task.Designer.cs">
+      <DependentUpon>Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\TaskPeople.cs" />
+    <Compile Include="Internal\TaskPeople.Designer.cs">
+      <DependentUpon>TaskPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\TaskSchedule.cs" />
+    <Compile Include="Internal\TaskSchedule.Designer.cs">
+      <DependentUpon>TaskSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\TurnOverCustomerAscendingResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Unknown.cs" />
+    <Compile Include="Internal\Unknown.Designer.cs">
+      <DependentUpon>Unknown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\Users.cs" />
+    <Compile Include="Internal\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\VacationType.cs" />
+    <Compile Include="Internal\Vehicle.cs" />
+    <Compile Include="Internal\Vehicle.Designer.cs">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\VehicleMileage.cs" />
+    <Compile Include="Internal\VehicleMileage.Designer.cs">
+      <DependentUpon>VehicleMileage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\VehicleNotRacedByPeriodeResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\VehicleTransicsLink.cs" />
+    <Compile Include="Internal\VehicleTransicsLink.Designer.cs">
+      <DependentUpon>VehicleTransicsLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal\VehicleType.cs" />
+    <Compile Include="Internal\VehicleType.Designer.cs">
+      <DependentUpon>VehicleType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TIS.Outlook2007_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TIS.Framework\TIS.Framework.csproj">
+      <Project>{4ec49b46-2ee5-42e1-887b-76d3681e33d1}</Project>
+      <Name>TIS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

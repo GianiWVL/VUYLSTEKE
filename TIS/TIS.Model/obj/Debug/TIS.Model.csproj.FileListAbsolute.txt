@@ -1,0 +1,7 @@
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\bin\Debug\TIS.Model.dll
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\bin\Debug\TIS.Model.pdb
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\bin\Debug\TIS.Framework.dll
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\bin\Debug\TIS.Framework.pdb
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\obj\Debug\TIS.Model.csprojResolveAssemblyReference.cache
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\obj\Debug\TIS.Model.dll
+C:\Dev\Vuylsteke\vuysteke\VUYLSTEKE\TIS\TIS.Model\obj\Debug\TIS.Model.pdb

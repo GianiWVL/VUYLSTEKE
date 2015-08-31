@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BD9A81F-8A43-45B5-945F-0E83D7B539EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TIS.Client</RootNamespace>
+    <AssemblyName>TIS.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>186F364CFB99B8EC2A247295073C709F2DB36350</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TIS.Outlook2007_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TIS.Outlook2007_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.EasyTest.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.RichEdit.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.RichEdit.v15.1.Design, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\..\Local_TFS_Projects\Michiel\ITT\Website\MVCWebsite\MVCWebsite\bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PROF_IT.Application">
+      <HintPath>..\REFERENCES\PROF_IT.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.Common">
+      <HintPath>..\REFERENCES\PROF_IT.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.DLM">
+      <HintPath>..\REFERENCES\PROF_IT.DLM.dll</HintPath>
+    </Reference>
+    <Reference Include="PROF_IT.Exceptionhandling">
+      <HintPath>..\..\..\..\..\Local_TFS_Projects\Dries\ITT\ITT\Software\References\PROF_IT.Exceptionhandling.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Costing\Costing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Costing\Costing.Designer.cs">
+      <DependentUpon>Costing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Document.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Document\Document.Designer.cs">
+      <DependentUpon>Document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentFile.Designer.cs">
+      <DependentUpon>DocumentFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentLink.Designer.cs">
+      <DependentUpon>DocumentLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentNodeOrLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentNodeOrLink.Designer.cs">
+      <DependentUpon>DocumentNodeOrLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Employees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employee\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File.cs" />
+    <Compile Include="Fuel\FuelDeliveryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fuel\FuelDeliveryDetail.Designer.cs">
+      <DependentUpon>FuelDeliveryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fuel\FuelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fuel\FuelDetail.Designer.cs">
+      <DependentUpon>FuelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fuel\Fuel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fuel\Fuel.Designer.cs">
+      <DependentUpon>Fuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Default.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\Default.Designer.cs">
+      <DependentUpon>Default.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\Maintenance.designer.cs">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\MaterialCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\MaterialCategory.designer.cs">
+      <DependentUpon>MaterialCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\MaterialCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\MaterialCategories.Designer.cs">
+      <DependentUpon>MaterialCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\Materials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\Materials.Designer.cs">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\Material.designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memo\Memo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memo\Memo.designer.cs">
+      <DependentUpon>Memo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParameterSystem\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParameterSystem\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\AbsentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\AbsentDetail.Designer.cs">
+      <DependentUpon>AbsentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\AssignDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\AssignDriver.Designer.cs">
+      <DependentUpon>AssignDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\AssignVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\AssignVehicle.Designer.cs">
+      <DependentUpon>AssignVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\ComboBoxItem.cs" />
+    <Compile Include="Planning\DriverAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\DriverAssignment.Designer.cs">
+      <DependentUpon>DriverAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\JobDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\JobDetail.Designer.cs">
+      <DependentUpon>JobDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\MemoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\MemoDetail.Designer.cs">
+      <DependentUpon>MemoDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\Planning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Planning\Planning.Designer.cs">
+      <DependentUpon>Planning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\Replacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\Replacement.Designer.cs">
+      <DependentUpon>Replacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\VehicleAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\VehicleAssignment.Designer.cs">
+      <DependentUpon>VehicleAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\Popup.designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\Popups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popup\Popups.Designer.cs">
+      <DependentUpon>Popups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CostSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CostSupplier.Designer.cs">
+      <DependentUpon>CostSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TurnOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\TurnOver.Designer.cs">
+      <DependentUpon>TurnOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TurnOverVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\TurnOverVehicle.Designer.cs">
+      <DependentUpon>TurnOverVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Suppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Supplier\Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\SupplierSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\SupplierSearch.Designer.cs">
+      <DependentUpon>SupplierSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeSearch.Designer.cs">
+      <DependentUpon>EmployeeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\BaseChildForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\BaseChildForm.designer.cs">
+      <DependentUpon>BaseChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\User.designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Users.designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedule\Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task\Tasks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Task\Tasks.Designer.cs">
+      <DependentUpon>Tasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task\Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task\Task.Designer.cs">
+      <DependentUpon>Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unknown\UnknownSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unknown\UnknownSearch.Designer.cs">
+      <DependentUpon>UnknownSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacation\Vacations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacation\Vacations.Designer.cs">
+      <DependentUpon>Vacations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle\BoardComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle\BoardComputer.Designer.cs">
+      <DependentUpon>BoardComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle\BoardComputers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicle\BoardComputers.Designer.cs">
+      <DependentUpon>BoardComputers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle\Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle\Vehicle.designer.cs">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle\Vehicles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicle\Vehicles.Designer.cs">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipFileEntry.cs" />
+    <EmbeddedResource Include="Costing\Costing.resx">
+      <DependentUpon>Costing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\Document.resx">
+      <DependentUpon>Document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocumentFile.resx">
+      <DependentUpon>DocumentFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocumentLink.resx">
+      <DependentUpon>DocumentLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocumentNodeOrLink.resx">
+      <DependentUpon>DocumentNodeOrLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuel\FuelDeliveryDetail.resx">
+      <DependentUpon>FuelDeliveryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuel\FuelDetail.resx">
+      <DependentUpon>FuelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuel\Fuel.resx">
+      <DependentUpon>Fuel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Default.resx">
+      <DependentUpon>Default.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\Maintenance.resx">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\MaterialCategory.resx">
+      <DependentUpon>MaterialCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\MaterialCategories.resx">
+      <DependentUpon>MaterialCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\Materials.resx">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\Material.resx">
+      <DependentUpon>Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memo\Memo.resx">
+      <DependentUpon>Memo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParameterSystem\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\AbsentDetail.resx">
+      <DependentUpon>AbsentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\AssignDriver.resx">
+      <DependentUpon>AssignDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\AssignVehicle.resx">
+      <DependentUpon>AssignVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\DriverAssignment.resx">
+      <DependentUpon>DriverAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\JobDetail.resx">
+      <DependentUpon>JobDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\MemoDetail.resx">
+      <DependentUpon>MemoDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\Planning.resx">
+      <DependentUpon>Planning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\Replacement.resx">
+      <DependentUpon>Replacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\VehicleAssignment.resx">
+      <DependentUpon>VehicleAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\Popup.resx">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\Popups.resx">
+      <DependentUpon>Popups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CostSupplier.resx">
+      <DependentUpon>CostSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TurnOver.resx">
+      <DependentUpon>TurnOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TurnOverVehicle.resx">
+      <DependentUpon>TurnOverVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\Suppliers.resx">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\SupplierSearch.resx">
+      <DependentUpon>SupplierSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeSearch.resx">
+      <DependentUpon>EmployeeSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\BaseChildForm.resx">
+      <DependentUpon>BaseChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Schedule\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task\Tasks.resx">
+      <DependentUpon>Tasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task\Task.resx">
+      <DependentUpon>Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unknown\UnknownSearch.resx">
+      <DependentUpon>UnknownSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacation\Vacations.resx">
+      <DependentUpon>Vacations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle\BoardComputer.resx">
+      <DependentUpon>BoardComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle\BoardComputers.resx">
+      <DependentUpon>BoardComputers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle\Vehicle.resx">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle\Vehicles.resx">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\TIS.DL.External.TAS.TurnOver.TurnOverObjectCollection.datasource" />
+    <None Include="Properties\DataSources\TIS.DL.Internal.Employee.EmployeeObjectCollection.datasource" />
+    <None Include="Properties\DataSources\TIS.DL.Internal.FuelDelivery.FuelDeliveryObjectCollection.datasource" />
+    <None Include="Properties\DataSources\TIS.Model.Internal.Cost.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TIS.Outlook2007_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TIS.BL\TIS.BL.csproj">
+      <Project>{a4705c1c-64b3-4d70-a6a5-84628086a6ad}</Project>
+      <Name>TIS.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TIS.DATA\TIS.DATA.csproj">
+      <Project>{69074938-9e8f-478a-bcc7-0133980e6ddb}</Project>
+      <Name>TIS.DATA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TIS.DL\TIS.DL.csproj">
+      <Project>{7592a856-e0d9-4997-a601-df7058434df0}</Project>
+      <Name>TIS.DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TIS.Framework\TIS.Framework.csproj">
+      <Project>{4ec49b46-2ee5-42e1-887b-76d3681e33d1}</Project>
+      <Name>TIS.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TIS.Model\TIS.Model.csproj">
+      <Project>{b5278012-7074-440e-b15d-1125a3cb58e7}</Project>
+      <Name>TIS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BoardComputer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
